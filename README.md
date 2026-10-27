@@ -45,15 +45,4 @@ Templates: [_templates/doc.md](_templates/doc.md), [_templates/decision.md](_tem
    ```
 4. To run each worktree independently, edit [local-run/project.sh](local-run/project.sh), then `local-run/setup-worktree.sh ../<repo>`. New worktrees: `local-run/setup-worktree.sh new <topic>`. See [local-run/README.md](local-run/README.md).
 
-## Claude Code plugin
-
-This repo is also a Claude Code plugin whose `dev-notes` skill does the setup above and keeps the rules while you work:
-
-```
-/plugin marketplace add souvik-razor/dev-notes-template
-/plugin install dev-notes@dev-notes
-```
-
-Then, from inside a code checkout: `/dev-notes:dev-notes init` scaffolds `../dev-notes`, `/dev-notes:dev-notes merged <PR>` applies rule 3, `/dev-notes:dev-notes audit` checks every rule (or just ask, e.g. "init dev-notes for this repo"). Writing notes needs no command; the skill triggers on its own.
-
-`.claude-plugin/` and `skills/` are the plugin; `init` leaves them out of the notes it creates. Delete them if you copied this repo by hand.
+Scaffold and Claude Code plugin (`/dev-notes:dev-notes init | merged <PR> | audit`): https://github.com/souvik-razor/dev-notes-template
