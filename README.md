@@ -11,6 +11,7 @@ Local design notes for `<project>`. Own git repo, kept beside the code checkout,
 | [plans/](plans/README.md) | Cross-cutting open plans |
 | [trackers/](trackers/README.md) | Living lists |
 | [runbooks/](runbooks/README.md) | How to run things |
+| [local-run/](local-run/README.md) | Run the app per checkout: each worktree on its own ports |
 | [qa/](qa/README.md) | Test reports and short-lived screenshots |
 | [archive/](archive/README.md) | Finished or superseded work |
 
@@ -42,3 +43,4 @@ Templates: [_templates/doc.md](_templates/doc.md), [_templates/decision.md](_tem
    ```
    Design notes live in ../dev-notes. Read ../dev-notes/README.md rules before creating or moving any doc there.
    ```
+4. To run each worktree independently, edit [local-run/project.sh](local-run/project.sh), then `local-run/setup-worktree.sh ../<repo>`. New worktrees: `local-run/setup-worktree.sh new <topic>`. See [local-run/README.md](local-run/README.md).
