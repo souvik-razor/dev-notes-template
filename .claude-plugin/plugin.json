@@ -1,0 +1,5 @@
+{
+  "name": "dev-notes",
+  "description": "Init, follow, audit and post-merge update a dev-notes folder beside your repo.",
+  "author": { "name": "souvik-razor", "url": "https://github.com/souvik-razor" }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "dev-notes",
+  "description": "Design notes kept beside the code: a scaffold, its rules, and per-worktree local run scripts.",
+  "owner": { "name": "souvik-razor", "url": "https://github.com/souvik-razor" },
+  "plugins": [
+    {
+      "name": "dev-notes",
+      "description": "Init, follow, audit and post-merge update a dev-notes folder beside your repo.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
